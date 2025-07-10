@@ -21,6 +21,6 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('polls/', include('polls.urls')),  # pollsアプリのURLをインクルード
-    path('', include('polls.urls')),  # ここを追加して空パスに対応
+    path('', include('polls.urls')),  # 空パスもpollsアプリにリダイレクト
 ]
 
